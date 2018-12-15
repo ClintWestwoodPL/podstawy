@@ -1,5 +1,8 @@
 package _2_typy;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
+import java.sql.SQLOutput;
 import java.time.LocalDate;
 
 public class Szkolenie {
@@ -8,23 +11,25 @@ public class Szkolenie {
     int liczbaUczestnikow;
     String nazwa;
     LocalDate data;
+    Adres adres;
 
     //1. tworzenie nowego obiektu
     // budowa konstruktora = [public/private] [nazwa] [(lista_parametrów)]
     //nazwa taka sama jak nazwa klasy
     // konstruktor, odpowiada za tworzzenie nowego obiektu: bezparametrycznhy
-    public Szkolenie() {
+    public Szkolenie(String szkolenie_java, int i, int i1, LocalDate of) {
         System.out.println("Wykonał się konstruktor bezparametryczny");
     }
 
     //konstruktor parametryczny
-    public Szkolenie(String nazwa, int liczbaUczestnikow, double cena, LocalDate data) {
+    public Szkolenie(String nazwa, int liczbaUczestnikow, double cena, LocalDate data, Adres adres) {
 
         System.out.println("Wykonał się konstruktor parametryczny");
         this.nazwa = nazwa;
         this.liczbaUczestnikow = liczbaUczestnikow;
         this.cena = cena;
         this.data = data;
+        this.adres = adres;
 
 
 
@@ -42,5 +47,6 @@ public class Szkolenie {
         System.out.printf("\t Cena: %.2f PLN\n", this.cena);
         System.out.print("\t Data: ");
         System.out.println(this.data);
+        adres.wyswietl();
     }
 }

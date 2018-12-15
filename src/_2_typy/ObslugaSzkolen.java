@@ -5,21 +5,29 @@ import java.time.LocalDate;
 import java.time.Month;
 
 public class ObslugaSzkolen {
+
+
     public static void main(String[] args) {
-        Szkolenie szkolenieJava = new Szkolenie("Szkolenie Java", 10, 1000, LocalDate.of(2018, Month.DECEMBER, 15)
+        Adres adresSzkoleniaJava = new Adres ("Dąbrowskiej 12", "Siemianowice", "41-103");
+        Szkolenie szkolenieJava = new Szkolenie("Szkolenie Java", 10, 1000,
+                LocalDate.of(2018, Month.DECEMBER, 15), adresSzkoleniaJava
 
         );
 
 
         szkolenieJava.wyswietl();
 
-        Szkolenie szkoleniePython = new Szkolenie("Szkolenie Python", 855, 12, LocalDate.of(2018, Month.APRIL, 24)
+        Adres adresSzkoleniaPython = new Adres ("Dąbrowskiej 12", "Siemianowice", "41-103");
+        Szkolenie szkoleniePython = new Szkolenie("Szkolenie Python", 855, 12, LocalDate.of(2018, Month.APRIL, 24),
+adresSzkoleniaPython
 
         );
 
 
 
       szkoleniePython.wyswietl();
+
+
     }
 
 }
