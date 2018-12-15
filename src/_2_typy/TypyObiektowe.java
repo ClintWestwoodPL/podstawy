@@ -1,4 +1,4 @@
-package _typy;
+package _2_typy;
 
 import java.util.Scanner;
 
