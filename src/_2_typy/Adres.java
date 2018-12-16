@@ -12,7 +12,6 @@ public class Adres {
 
     public Adres (String ulica, String miasto, String kodPocztowy) {
 
-        System.out.println("Wykonał się konstruktor parametryczny");
 
         this.ulica = ulica;
         this.miasto = miasto;
@@ -21,9 +20,9 @@ public class Adres {
     }
     public void wyswietl() {
 
-        System.out.println("Ulica:" + this.ulica);
-        System.out.println("Miasto: " + this.miasto);
-        System.out.println("Kod pocztowy: " + this.kodPocztowy);
+        System.out.println("\t Ulica: " + this.ulica);
+        System.out.println("\t Miasto: " + this.miasto);
+        System.out.println("\t Kod pocztowy: " + this.kodPocztowy);
 
 
 
