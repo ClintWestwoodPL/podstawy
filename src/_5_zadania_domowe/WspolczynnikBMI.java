@@ -1,4 +1,4 @@
-package _zadania;
+package _5_zadania_domowe;
 
 import java.util.Scanner;
 
